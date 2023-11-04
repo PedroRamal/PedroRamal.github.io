@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Petit+Formal+Script&family=Poppins:ital,wght@0,300;0,700;0,800;1,400;1,600;1,800&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.contato{
+  color: black;
+  width: 100%;
+  height: 50vh;
+}
+
+#fotografo{
+  color: black;
+  /*background-color: black;*/
+}
+
+h1{
+  font-size: 32px;
+  font-family: 'Petit Formal Script', cursive;
+  text-align: center;
+}
+
+.link-nav{
+  text-decoration: none;
+  color: black;
+}
+
+
+#navbar{
+  color: black;
+  width: 100%;
+  padding: 0.5%;
+}
+
+#foto-fundo {
+  background-image: url(img/unsplash_Zf14BckA1JA.png);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  padding: 20%;
+}
+
+.menu ul {
+  text-align: center;
+  padding: 0.5%;
+  border-top: solid 1px rgb(0, 0, 0);
+  border-bottom: solid 1px rgb(0, 0, 0);
+  margin-bottom: 0;
+}
+
+.menu ul li {
+  display: inline-block;
+  color: #0a0909;
+  margin-left: 10px;
+  height: 30px;
+}
+
+.menu ul li:hover {
+  border-bottom: 1.5px solid black;
+  font-weight: bold
+}
+
+.menu ul li a:hover {
+  color: black;
+}
+
+.menu ul li a {
+  color: #474040;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  width: 80%;
+  padding: 0px 80px 0px 80px;
+}
+
+.contato .card1 {
+  width: fit-content;
+  height: fit-content;
+  margin-left: 2%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.contato .socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#carouselExampleCaptions{
+  display: flex;
+  align-items: flex-end;
+}
+
+.carousel-item{
+  width: 40%;
+  height: 5%;
+}
+
+.body-fotografo{
+  padding: 2% 2% 0 2%;
+  font-size: 20px;
+  text-align: justify;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  margin-bottom: 0;
+}
+
+
+#footer {
+  border-top: solid 2px #000000;
+  color: #000000;
+  text-align: center;
+  padding: 0.8rem;
+}
+
+#footer .logo {
+  margin-top: 1%;
+  text-align: center;
+}
+
+#footer li {
+  text-decoration: none;
+  list-style: none;
+}
+
+#footer ul li {
+  display: inline-block;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contato .back-content img{
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.contato .card {
+  overflow: visible;
+  width: 190px;
+  height: 254px;
+}
+
+.contato .content {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 300ms;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+  border-radius: 5px;
+}
+
+.contato .front, .back {
+  background-color: #151515;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.contato .back {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.contato .back::before {
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 160px;
+  height: 160%;
+  background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+  animation: rotation_481 5000ms infinite linear;
+}
+
+.contato .back-content {
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  background-color: #151515;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.contato .card:hover .content {
+  transform: rotateY(180deg);
+}
+
+@keyframes rotation_481 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  0% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.contato  .front {
+  transform: rotateY(180deg);
+  color: white;
+}
+
+.contato .front .front-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contato .front-content .badge {
+  background-color: #00000055;
+  padding: 2px 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  width: fit-content;
+}
+
+.contato  .description {
+  box-shadow: 0px 0px 10px 5px #00000088;
+  width: 100%;
+  padding: 10px;
+  background-color: #00000099;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+}
+
+.contato .title {
+  font-size: 11px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contato .title p {
+  width: 50%;
+}
+
+.contato .card-footer {
+  color: #ffffff88;
+  margin-top: 5px;
+  font-size: 8px;
+}
+
+.contato .front .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.contato  .circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #ffbb66;
+  position: relative;
+  filter: blur(15px);
+  animation: floating 2600ms infinite linear;
+}
+
+.contato  #bottom {
+  background-color: #ff8866;
+  left: 50px;
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  animation-delay: -800ms;
+}
+
+.contato  #right {
+  background-color: #ff2233;
+  left: 160px;
+  top: -80px;
+  width: 30px;
+  height: 30px;
+  animation-delay: -1800ms;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.contato {
+  padding-left: 2%;
+}

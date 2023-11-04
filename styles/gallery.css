@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Petit+Formal+Script&family=Poppins:ital,wght@0,300;0,700;0,800;1,400;1,600;1,800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+
+}
+
+img{
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+section{
+    column-count: 3;
+    column-gap: 10px;
+}
+
+h1{
+    font-size: 32px;
+    font-family: 'Petit Formal Script', cursive;
+    text-align: center;
+    color: white;
+}
+
+header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 3px rgb(255, 255, 255);
+    margin-bottom: 0.1%;
+    
+}
+
+span{
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer {
+    border-top: solid 2px white;
+    color: white;
+    text-align: center;
+    padding: 0.8rem;
+  }
+  
+  #footer .logo {
+    margin-top: 1%;
+    text-align: center;
+  }
+  
+  #footer li {
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  #footer ul li {
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+  }
