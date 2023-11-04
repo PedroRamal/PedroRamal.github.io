@@ -1,4 +1,4 @@
-# Meu Portfólio de Fotografia
+# Portfólio de Fotografia
 
 Bem-vindo ao meu repositório do GitHub que contém o código-fonte e o conteúdo do meu site de fotografia. Neste projeto, realizado para a disciplina de PWEB baseado nas obras do fotógrafo Daniel Ramal, compartilha a paixão pela fotografia e exibe algumas
 de suas melhores capturas.
